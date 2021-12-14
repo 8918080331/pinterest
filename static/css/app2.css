@@ -1,0 +1,534 @@
+#grad {
+    background-image: linear-gradient(to bottom, rgba(212, 201, 201, 0), rgba(94, 89, 89, 0.829),rgba(212, 201, 201, 0));
+
+    /* background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center; */
+    /* background:url(../img/bg-image.jpg) center;
+    
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; */
+
+}
+
+
+
+.pic-box{
+    /* opacity: 0.2; */
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    margin: 4px;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+    padding: 4px;
+    
+}
+
+.pic-box:hover, .pic-box:focus, .pic-box:active{
+    /* opacity: 1;  */
+  -webkit-transform: scale(1.1);  
+  transform: scale(1.1);
+  
+  /* box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19); */
+   
+}
+
+.forgot {
+    text-decoration: underline;
+}
+
+
+
+.btn-google {
+    color: white !important;
+    background-color: #f53a29;
+  }
+  
+.btn-facebook {
+    color: white !important;
+    background-color: #3b5998;
+  }
+
+
+
+
+.form-container{
+	margin:0;
+	color:#6a6f8c;
+	background:#c8c8c8;
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+
+.login-wrap:after, .login-wrap:before{
+    box-sizing:border-box;
+}
+
+.clearfix:after,.clearfix:before{
+    content:'';
+    display:table;
+}
+
+.clearfix:after{
+    clear:both;
+    display:block;
+}
+
+.form-container a{color:inherit;
+    text-decoration:none;
+}
+
+/* ------------------- signup change high width  ------------*/
+.login-wrap{
+	width:100%;
+	margin:auto;
+	max-width:500px;
+	min-height:900px;
+   /* height: 100%; */
+	position:relative;
+	/* background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center; */
+	box-shadow:0 15px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+    /* border: 1px solid red;
+    border-radius: 25px; */
+}
+
+
+
+
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+    /* background:rgba(40,57,101,.9); */
+	/* background:rgb(236, 227, 227); */
+    background-image: linear-gradient(to right, rgba(230, 217, 217, 0), rgb(121, 114, 114));
+   
+}
+
+
+
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+	text-transform:uppercase;
+}
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	color:#fff;
+	border-color:#ee111191;
+}
+.login-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width:100%;
+	color:#fff;    
+	display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group input[data-type="password"]{
+	/* text-security:circle; */
+	-webkit-text-security:circle;
+}
+.login-form .group .label{
+	/* color:#aaa; */
+    color: #fff;
+	font-size:12px;
+}
+.login-form .group .button{
+	background:#ee111191;
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+	color:#fff;
+}
+.login-form .group .check:checked + label .icon{
+	background:#ee111191;
+}
+.login-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+	transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+	transform:rotate(0);
+}
+
+.hr{
+	height:2px;
+	margin:20px 0 20px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+    margin-top: 40px;
+    margin-bottom: 20px;
+	text-align:center;
+    color: #fff;
+}
+
+.foot-lnk-2{
+     
+	text-align:center; 
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+   
+
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+   
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998
+}
+
+
+
+.social-network a.icoGoogle:hover {
+    background-color: #BD3518
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoGoogle:hover i {
+    color: #fff
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    /* margin-top: 80px; */
+    /* margin-left: 55px; */
+    /* margin-right: auto; */
+    border-radius: 50%;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+}
+
+.group .social-circle .social-id{
+    margin-left: 55px;
+    margin-bottom: 2px;
+}
+
+.social-circle-2 li i {
+    margin-top: -5px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    transform: rotate(360deg);
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #fff;
+    transition: all 0.8s;
+    transition: all 0.8s
+}
+
+
+
+/* --------------------------------------------- */
+
+
+
+.social-circle-2 li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    /* margin-top: 80px; */
+    /* margin-left: 55px; */
+    /* margin-right: auto; */
+    border-radius: 50%;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+}
+
+.group .social-circle-2 .social-id{
+    margin-left: 55px;
+    margin-bottom: 2px;
+}
+
+.social-circle-2 li i {
+    margin-top: -5px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.social-circle-2 li a:hover i,
+.triggeredHover {
+    transform: rotate(360deg);
+    transition: all 0.2s;
+}
+
+.social-circle-2 i {
+    color: #fff;
+    transition: all 0.8s;
+    transition: all 0.8s
+}
+
+
+
+
+/* --------------------- floating button ------------------ */
+
+
+.fab-con{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.fab-icon-holder{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #dbd8d7ec;
+     
+    /* box-shadow: 0 6px 20px rgba(0,0,0,0.2); */
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+
+.fab-icon-holder:hover{
+    opacity: 0.8;
+}
+
+.fab-icon-holder i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    font-style: 25px;
+    color: #883535;
+}
+
+
+
+.fgh{
+    border: 2px solid red;
+}
+
+
+
+/* --------------------- floating button 2 ------------------ */
+
+
+.fab-con-3{
+    position: fixed;
+    bottom: 140px;
+    right: 50px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.fab-icon-holder-3{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #dbd8d7ec;
+     
+    /* box-shadow: 0 6px 20px rgba(0,0,0,0.2); */
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+
+.fab-icon-holder-3:hover{
+    opacity: 0.8;
+}
+
+.fab-icon-holder-3 i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    font-style: 25px;
+    color: #6d6868;
+}
+
+ 
+
+/* ---------------------   post create   --------------------- */
+
+.post-create{
+    box-shadow:0 15px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+
+
+
+.post-button #but{
+    /* border: 1px solid; */
+    border-radius: 50%; 
+    width:70px; 
+    height:70px;
+    
+    background-color: rgb(192, 188, 188);
+    box-shadow:0 15px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+
+.post-button #but i{
+    margin-right: 20px;
+    
+}
+
+ 
+.post-button #but:hover{
+    opacity: 0.6;
+}
+
+
+/* ---------------------------- forget -------------------------- */
+
+
+
+
+.post-button-2 #but{
+    /* border: 1px solid; */
+    border-radius: 50%; 
+    width:70px; 
+    height:70px;
+     border: rgb(231, 39, 39);
+    background-color: rgb(231, 39, 39);
+    font-family: 'Raleway', sans-serif;
+     
+}
+
+/* .post-button-2 #but i{
+     
+    
+} */
+
+  
+ 
+
+
+/* ------------------------------------ posts card ---------------------------------  */
+
+.posts-card{
+      box-shadow:0 15px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+
+
+/* -------------------------------------- image upload -------------------------------- */
+
+ 
